@@ -6,8 +6,9 @@
 body{
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: dimgray;
+    background-color: gainsboro;
 }
+/*Nav Bar*/
 .navbar{
     display: flex;
     justify-content: center;
@@ -74,7 +75,7 @@ body{
     background-color: rgb(43,42,42);
 }
 
-@media(max-width: 720px) {
+@media(max-width: 767px) {
     .nav-container .nav-links{
         display: none;
         flex-direction: column;
@@ -110,7 +111,6 @@ body{
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
 @media (max-width:480px) {
     .nav-container {
         padding: 0 1rem;
@@ -123,9 +123,12 @@ body{
         padding: 3px 15px;
     }
 }
+
+/* main site */
+
 section{
     min-height: 100vh;
-    padding: 8rem 12%;
+    padding: 8rem 6%;
     width: 100%;
     position: relative;
 }
@@ -200,5 +203,79 @@ section{
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* Portfolio */
+.portfolio-grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.portfolio-item{
+    right: 0;
+    margin: 0 0 15px;
+    flex: 33.3%;
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+}
+
+.portfolio-item .item-link{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 2%;
+}
+.portfolio-item .item-link .portfolio-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all ease 1s;
+    opacity: 0;
+    background: lightsalmon;
+    border-radius: 2%;
+    background-color: lightsalmon !important;
+}
+.portfolio-item .item-link .portfolio-hover:hover{
+    opacity: .8;
+}
+.portfolio-item .item-link .portfolio-hover .hover-content{
+    font-size: 22px;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    color: black;
+}
+.portfolio-item .item-link .portfolio-hover .hover-content .project-description{
+    font-size: 16px;
+    margin: 20px;
+}
+.card-img{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 5/4;
+    border-radius: 2%;
+    object-fit:cover;
+}
+@media (min-width: 576px) {
+    .portfolio-item{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px){
+    .portfolio-item{
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+    }
 }
