@@ -137,7 +137,7 @@ section{
     align-items: center;
     justify-content: center;
 }
-.home .home-container{
+.home .intro-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,6 +146,8 @@ section{
 .home img{
     width: 30vw;
     border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 .info-box{
     display: flex;
@@ -170,23 +172,6 @@ section{
     color: transparent;
     font-size: 2rem;
 }
-.btn-group{
-    display: flex;
-    gap: 1rem;
-}
-.btn{
-    border-radius: 3rem;
-    padding: 0.5rem 1.5rem;
-    border: 2px solid black;
-    cursor: pointer;
-    font-weight: 500;
-    text-wrap: nowrap;
-    transition: 0.2s ease-in-out;
-}
-.btn:hover{
-    background-color: black;
-    color: white;
-}
 .socials{
     display: flex;
     gap: 2rem;
@@ -197,23 +182,59 @@ section{
     transition: 0.2s ease-in-out;
 }
 .socials i:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
+
 .section-title{
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
-
+.elementor-grid-item{
+    --icon-padding:0em;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+.elementor-icon.elementor-social-icon {
+    font-size: var(--icon-size, 25px);
+    height: calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em));
+    line-height: var(--icon-size, 25px);
+    width: calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em));
+}
+.elementor-screen-only{
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: -10000em;
+    width: 1px;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+svg{
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+/*About*/
+#about{
+    background-color: lightgray;
+}
 /* Portfolio */
-.portfolio-grid{
+#projects{
+    background-color: white;
+}
+.row{
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
-.portfolio-item{
+.portfolio-item, .center, .left, .right{
     right: 0;
     margin: 0 0 15px;
     flex: 33.3%;
@@ -278,4 +299,26 @@ section{
         flex: 0 0 33.3%;
         max-width: 33.3%;
     }
+}
+/* Footer */
+.site-footer{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    font-size: 1.2rem;
+}
+.container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center, .left, .right{
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.center{
+    text-align: center;
 }
