@@ -306,11 +306,36 @@ svg{
 .year{
     right: 20%;
 }
-.degree{
-    
-}
 .other{
     font-weight: lighter;
+}
+.sk-li-con, .relevant-classes{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    flex-grow: 1;
+}
+.box, .relevant-classes li{
+    flex: 0 0 20%;
+    margin: 5px;
+    padding: 2px;
+    height: 70px;
+
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
+    box-shadow: var(--shadow) 0px 0px 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-secondary);
+    background: var(--color-white);
+    }
+.box{
+    height: 100px;
 }
 /* Skills */
 .carousel-wrapper{
@@ -356,31 +381,6 @@ svg{
     text-align: center;
     margin-bottom: 5px;
 }
-.sk-li-con{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    flex-grow: 1;
-}
-.box {
-    flex: 0 0 20%;
-    margin: 5px;
-    padding: 5px;
-    height: 150px;
-
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-
-    box-shadow: var(--shadow) 0px 0px 5px;
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--color-secondary);
-    background: var(--color-white);
-    }
 
 
 /* Education */
