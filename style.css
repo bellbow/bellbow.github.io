@@ -284,8 +284,6 @@ svg{
     background-color: var(--color-gray-1);
     padding: 3%;
 }
-.program{
-}
 .program-head{
     background-color: white;
     display: flex;
@@ -293,6 +291,7 @@ svg{
 }
 .school-logo{
     max-width: 150px;
+    margin-right: 2%;
 }
 .school-desc{
     position: relative;    
@@ -307,15 +306,20 @@ svg{
 .year{
     right: 20%;
 }
+.degree{
+    
+}
+.other{
+    font-weight: lighter;
+}
 /* Skills */
 .carousel-wrapper{
     display: flex;
     gap: 8px;
-    padding: 16px;
+    padding: 8px;
     align-items: center;
     justify-content: center;
 }
-
 .carousel-item{
     margin: 5px;
     flex-shrink: 0;
@@ -344,7 +348,41 @@ svg{
 }
 .skill-list.active{
     display: block;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
+.skill-list h4{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.sk-li-con{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    flex-grow: 1;
+}
+.box {
+    flex: 0 0 20%;
+    margin: 5px;
+    padding: 5px;
+    height: 150px;
+
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
+    box-shadow: var(--shadow) 0px 0px 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-secondary);
+    background: var(--color-white);
+    }
+
+
 /* Education */
 
 
