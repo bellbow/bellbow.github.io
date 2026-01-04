@@ -268,11 +268,11 @@ section{
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
-svg{
+.tableau-home{
     overflow-clip-margin: content-box;
     overflow: hidden;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     fill: var(--color-black);
 }
 /*About*/
@@ -285,9 +285,10 @@ svg{
     padding: 3%;
 }
 .program-head{
-    background-color: white;
+    background-color: var(--color-white);
     display: flex;
     padding: 2%;
+    margin: 2%;
 }
 .school-logo{
     max-width: 150px;
@@ -322,20 +323,23 @@ svg{
     margin: 5px;
     padding: 2px;
     height: 70px;
-
+    
     text-align: center;
     align-content: center;
     justify-content: center;
 
-    box-shadow: var(--shadow) 0px 0px 5px;
+    box-shadow: var(--color-secondary) 0px 0px 5px;
     border-radius: 5px;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
     border-color: var(--color-secondary);
-    background: var(--color-white);
+    background: var(--color-primary);
     }
 .box{
     height: 100px;
+        box-shadow: var(--color-secondary) 0px 0px 5px;
+    border-color: var(--color-secondary);
+    background: var(--color-white);
 }
 /* Skills */
 .carousel-wrapper{
@@ -344,6 +348,7 @@ svg{
     padding: 8px;
     align-items: center;
     justify-content: center;
+    margin: 2%;
 }
 .carousel-item{
     margin: 5px;
@@ -508,6 +513,7 @@ svg{
 
 /* Contact */
 .contact{
+    display: flex;
     margin: 3rem;
     .input-control{
         margin: 1rem 0;
@@ -528,6 +534,31 @@ svg{
     :last-child{
         margin-left: 1.5rem;
     }
+}
+.left-contact{
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    color: black;
+}
+.contact-item .icon{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+.contact-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.tableau-contact{
+    fill: black;
+    height:1rem;
+    width: 1rem;
+}
+.contact .btn{
+    color: black;
+    border-color: black;
 }
 /* Footer */
 .site-footer{
@@ -559,7 +590,7 @@ svg{
     text-decoration: none;
     color: var(--color-white);
 }
-.foot-icon{
+.tableau-foot{
     height:1.2rem;
     width:1.2rem;
     fill:var(--color-white);
