@@ -179,14 +179,12 @@ body{
         padding: 3px 15px;
     }
 }
-
 section{
     min-height: 100vh;
     padding: 8rem 6%;
     width: 100%;
     position: relative;
 }
-
 /* main site */
 .img-attribution, .img-attribution a{
     font-size: 9px;
